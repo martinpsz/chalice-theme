@@ -8,9 +8,16 @@ export default defineConfig({
     rollupOptions: {
       input: './src/app.ts', // Points to your source file
       output: {
-        entryFileNames: 'app.js', // Forces output to dist/app.js without random hashes
-        assetFileNames: 'app.[ext]',
-        chunkFileNames: 'chunk.js'
+        entryFileNames: 'app.js',
+        assetFileNames: (assetInfo) => {
+          const fileName = assetInfo.names?.[0] ?? '';
+
+          if (fileName.endsWith('.css')){
+            return 'style.css';
+          }
+
+          return '[name].[ext]'
+        }
       }
     }
   }

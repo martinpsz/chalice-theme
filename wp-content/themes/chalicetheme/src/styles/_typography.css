@@ -1,0 +1,26 @@
+/* Noto Sans Regular - English regular text */
+@font-face {
+    font-family: 'Noto Sans Local';
+    src: url('../assets/fonts/noto_sans/NotoSans-VariableFont_wdth\,wght.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Noto Sans Italic - English italic text */
+@font-face {
+    font-family: 'Noto Sans Local';
+    src: url('../assets/fonts/noto_sans/NotoSans-Italic-VariableFont_wdth\,wght.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Noto Sans TC - Chinese characters */
+@font-face {
+    font-family: 'Noto Sans TC Local';
+    src: url('../assets/fonts/noto_sans_tc/NotoSansTC-VariableFont_wght.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}

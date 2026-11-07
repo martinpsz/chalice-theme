@@ -1,0 +1,52 @@
+:root {
+  /* ==========================================
+     1. BRAND (Primary) - Derived from Deep Navy
+     ========================================== */
+  --wa-color-primary-50:  #e6ecf5;
+  --wa-color-primary-100: #c2d4eb;
+  --wa-color-primary-200: #9ab7de;
+  --wa-color-primary-300: #719ad0;
+  --wa-color-primary-400: #4d81c4;
+  --wa-color-primary-500: #2b69b8; /* Base brand blue */
+  --wa-color-primary-600: #225497;
+  --wa-color-primary-700: #1a4074;
+  --wa-color-primary-800: #132b4f;
+  --wa-color-primary-900: #0d1b32;
+  --wa-color-primary-950: #060e19;
+
+  /* ==========================================
+     2. SECONDARY - Derived from Warm Gold
+     ========================================== */
+  --wa-color-secondary-50:  #fdfae6;
+  --wa-color-secondary-100: #f7efc0;
+  --wa-color-secondary-200: #f1e395;
+  --wa-color-secondary-300: #ebd66a;
+  --wa-color-secondary-400: #e6cb45;
+  --wa-color-secondary-500: #d4b125; /* Base gold */
+  --wa-color-secondary-600: #aa8c1c;
+  --wa-color-secondary-700: #7f6914;
+  --wa-color-secondary-800: #55450d;
+  --wa-color-secondary-900: #2a2206;
+  --wa-color-secondary-950: #151103;
+
+  /* ==========================================
+     3. NEUTRALS - Slate / Cool-Warm Balance
+     Complementary slates prevent the deep blue 
+     from looking washed out while keeping text legible.
+     ========================================== */
+  --wa-color-neutral-50:  #f8f9fa;
+  --wa-color-neutral-100: #f1f3f5;
+  --wa-color-neutral-200: #e9ecef;
+  --wa-color-neutral-300: #dee2e6;
+  --wa-color-neutral-400: #ced4da;
+  --wa-color-neutral-500: #adb5bd;
+  --wa-color-neutral-600: #6c757d;
+  --wa-color-neutral-700: #495057;
+  --wa-color-neutral-800: #343a40;
+  --wa-color-neutral-900: #212529;
+  --wa-color-neutral-950: #121416;
+
+  /* Pure absolute definitions */
+  --wa-color-white: #ffffff;
+  --wa-color-black: #000000;
+}

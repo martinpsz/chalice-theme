@@ -3,7 +3,9 @@
 
 // -----------------------------------------------
 
+///<reference types="vite/client" />
 
+import './styles/main.css'
 import { LitElement, html, css } from 'lit';
 
 export class ChaliceApp extends LitElement {
