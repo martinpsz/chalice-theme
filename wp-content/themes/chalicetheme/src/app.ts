@@ -1,3 +1,9 @@
+// --- Necessary web awesome component imports ---
+
+
+// -----------------------------------------------
+
+
 import { LitElement, html, css } from 'lit';
 
 export class ChaliceApp extends LitElement {
