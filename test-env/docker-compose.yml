@@ -1,0 +1,38 @@
+services:
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_DATABASE: test-db
+      MYSQL_USER: test-agent
+      MYSQL_PASSWORD: test-password
+      MYSQL_RANDOM_ROOT_PASSWORD: "1"
+    volumes:
+      - db_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  wordpress:
+    image: wordpress:latest
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: test-agent
+      WORDPRESS_DB_PASSWORD: test-password
+      WORDPRESS_DB_NAME: test-db
+    volumes:
+      - ../wp-content:/var/www/html/wp-content
+      - wordpress_data:/var/www/html
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  wordpress_data:
+  db_data:

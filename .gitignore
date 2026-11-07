@@ -1,0 +1,6 @@
+wp-content/themes/chalicetheme/node_modules/
+wp-content/themes/chalicetheme/dist/
+
+wp-contnet/uploads/
+.DS_Store
+.env
