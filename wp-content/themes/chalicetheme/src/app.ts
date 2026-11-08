@@ -15,9 +15,7 @@ export class ChaliceApp extends LitElement {
 
   render() {
     return html`
-        <header>
-          <p>Chalice</p>  
-        </header>
+        
     
     `;
   }
