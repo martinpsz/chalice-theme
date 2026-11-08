@@ -1,0 +1,1 @@
+Define shared types in this file
