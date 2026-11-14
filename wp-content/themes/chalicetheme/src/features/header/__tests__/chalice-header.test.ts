@@ -1,1 +1,0 @@
-// Integration test for full header component
