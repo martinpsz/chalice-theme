@@ -1,6 +1,7 @@
 wp-content/themes/chalicetheme/node_modules/
 wp-content/themes/chalicetheme/dist/
-
-wp-contnet/uploads/
+wp-content/plugins/*
+!wp-content/plugins/chalice-core/
+wp-content/uploads/
 .DS_Store
 .env
